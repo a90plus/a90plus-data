@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://a90plus.github.io/schema/country.schema.json",
+  "title": "Country",
+  "description": "A nation's participation record in a single World Cup tournament. All stats are scoped to this cup only.",
+  "type": "object",
+  "required": [
+    "iso3", "name", "confederation", "qualificationStage",
+    "finalStanding", "finishStage", "groupId",
+    "record", "coach", "squad"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "iso3": { "type": "string", "pattern": "^[A-Z]{3}$", "description": "ISO 3166-1 alpha-3. Historical codes: FRG, GDR, URS, YUG, TCH, ZAI." },
+    "name": { "type": "string", "description": "Period-correct name, e.g. 'West Germany' not 'Germany'." },
+    "flagEmoji": { "type": ["string", "null"] },
+    "confederation": {
+      "type": "string",
+      "enum": ["UEFA", "CONMEBOL", "CONCACAF", "CAF", "AFC", "OFC"]
+    },
+    "qualificationStage": { "type": "string", "description": "How they qualified, e.g. 'Host', 'UEFA Qualifying'." },
+    "finalStanding": { "type": ["integer", "null"], "minimum": 1, "maximum": 32 },
+    "finishStage": {
+      "type": "string",
+      "enum": ["GroupStage", "RoundOf16", "QuarterFinal", "SemiFinal", "ThirdPlace", "Final", "Winner"]
+    },
+    "groupId": { "type": ["string", "null"], "description": "Group letter e.g. 'A'. Null for pre-group-stage formats." },
+    "record": {
+      "type": "object",
+      "required": ["played", "won", "drawn", "lost", "goalsFor", "goalsAgainst", "goalDifference", "points"],
+      "additionalProperties": false,
+      "properties": {
+        "played": { "type": "integer", "minimum": 0 },
+        "won": { "type": "integer", "minimum": 0 },
+        "drawn": { "type": "integer", "minimum": 0 },
+        "lost": { "type": "integer", "minimum": 0 },
+        "goalsFor": { "type": "integer", "minimum": 0 },
+        "goalsAgainst": { "type": "integer", "minimum": 0 },
+        "goalDifference": { "type": "integer" },
+        "points": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "coach": {
+      "type": "object",
+      "required": ["name", "nationality"],
+      "properties": {
+        "name": { "type": "string" },
+        "nationality": { "type": "string" },
+        "iso3": { "type": ["string", "null"] },
+        "dateOfBirth": { "type": ["string", "null"] }
+      }
+    },
+    "squad": {
+      "type": "array",
+      "items": { "$ref": "player.schema.json" },
+      "minItems": 1
+    }
+  }
+}

@@ -1,0 +1,871 @@
+{
+  "tournamentId": "wc-2018",
+  "year": 2018,
+  "edition": 21,
+  "isMock": true,
+  "verified": false,
+  "host": {
+    "countries": [
+      "RUS"
+    ],
+    "names": [
+      "Russia"
+    ]
+  },
+  "dates": {
+    "start": "2018-06-14",
+    "end": "2018-07-15"
+  },
+  "format": {
+    "teamsCount": 32,
+    "groups": 8,
+    "hasGroupStage": true,
+    "hasExtraTime": true,
+    "thirdPlaceMatch": true,
+    "stages": [
+      "GroupStage",
+      "RoundOf16",
+      "QuarterFinal",
+      "SemiFinal",
+      "ThirdPlace",
+      "Final"
+    ]
+  },
+  "winner": "FRA",
+  "runnerUp": "CRO",
+  "third": "BEL",
+  "fourth": "ENG",
+  "awards": [
+    {
+      "award": "GoldenBoot",
+      "playerId": "kane-harry-1993",
+      "value": 6
+    },
+    {
+      "award": "GoldenBall",
+      "playerId": "modric-luka-1985",
+      "value": null
+    },
+    {
+      "award": "GoldenGlove",
+      "playerId": "courtois-thibaut-1992",
+      "value": null
+    },
+    {
+      "award": "BestYoungPlayer",
+      "playerId": "mbappe-kylian-1998",
+      "value": null
+    },
+    {
+      "award": "FairPlayAward",
+      "playerId": null,
+      "countryIso3": "ESP",
+      "value": null
+    }
+  ],
+  "countries": [
+    {
+      "iso3": "FRA",
+      "name": "France",
+      "confederation": "UEFA",
+      "qualificationStage": "UEFA Qualifying",
+      "finalStanding": 1,
+      "finishStage": "Winner",
+      "groupId": "C",
+      "record": {
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 4,
+        "goalsAgainst": 2,
+        "goalDifference": 2,
+        "points": 3
+      },
+      "coach": {
+        "name": "Didier Deschamps",
+        "nationality": "French",
+        "iso3": "FRA"
+      },
+      "squad": [
+        {
+          "playerId": "lloris-hugo-1986",
+          "fullName": "Hugo Lloris",
+          "commonName": "Lloris",
+          "birthDate": "1986-12-26",
+          "birthPlace": "Nice",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 188,
+          "weight": 78,
+          "shirtNumber": 1,
+          "position": "GK",
+          "foot": "right",
+          "club": {
+            "name": "Tottenham Hotspur",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 31,
+          "internationalCaps": 101,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "mbappe-kylian-1998",
+          "fullName": "Kylian Mbappé Lottin",
+          "commonName": "Mbappé",
+          "birthDate": "1998-12-20",
+          "birthPlace": "Bondy",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 178,
+          "weight": 73,
+          "shirtNumber": 10,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Paris Saint-Germain",
+            "country": "France",
+            "iso3": "FRA",
+            "league": "Ligue 1"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 19,
+          "internationalCaps": 14,
+          "internationalGoals": 6
+        },
+        {
+          "playerId": "griezmann-antoine-1991",
+          "fullName": "Antoine Griezmann",
+          "commonName": "Griezmann",
+          "birthDate": "1991-03-21",
+          "birthPlace": "Mâcon",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 176,
+          "weight": 73,
+          "shirtNumber": 7,
+          "position": "FW",
+          "foot": "left",
+          "club": {
+            "name": "Atlético Madrid",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 27,
+          "internationalCaps": 72,
+          "internationalGoals": 19
+        },
+        {
+          "playerId": "pogba-paul-1993",
+          "fullName": "Paul Pogba",
+          "commonName": "Pogba",
+          "birthDate": "1993-03-15",
+          "birthPlace": "Lagny-sur-Marne",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 191,
+          "weight": 84,
+          "shirtNumber": 6,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Manchester United",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 25,
+          "internationalCaps": 65,
+          "internationalGoals": 10
+        },
+        {
+          "playerId": "giroud-olivier-1986",
+          "fullName": "Olivier Giroud",
+          "commonName": "Giroud",
+          "birthDate": "1986-09-30",
+          "birthPlace": "Chambéry",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 192,
+          "weight": 91,
+          "shirtNumber": 9,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Chelsea",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 31,
+          "internationalCaps": 87,
+          "internationalGoals": 31
+        }
+      ]
+    },
+    {
+      "iso3": "CRO",
+      "name": "Croatia",
+      "confederation": "UEFA",
+      "qualificationStage": "UEFA Qualifying",
+      "finalStanding": 2,
+      "finishStage": "Final",
+      "groupId": "D",
+      "record": {
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 4,
+        "goalDifference": -2,
+        "points": 0
+      },
+      "coach": {
+        "name": "Zlatko Dalić",
+        "nationality": "Croatian",
+        "iso3": "CRO"
+      },
+      "squad": [
+        {
+          "playerId": "subasic-danijel-1984",
+          "fullName": "Danijel Subašić",
+          "commonName": "Subašić",
+          "birthDate": "1984-10-27",
+          "birthPlace": "Split",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 190,
+          "weight": 82,
+          "shirtNumber": 1,
+          "position": "GK",
+          "foot": "right",
+          "club": {
+            "name": "AS Monaco",
+            "country": "France",
+            "iso3": "FRA",
+            "league": "Ligue 1"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 33,
+          "internationalCaps": 47,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "modric-luka-1985",
+          "fullName": "Luka Modrić",
+          "commonName": "Modrić",
+          "birthDate": "1985-09-09",
+          "birthPlace": "Zadar",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 172,
+          "weight": 66,
+          "shirtNumber": 10,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Real Madrid",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 32,
+          "internationalCaps": 118,
+          "internationalGoals": 16
+        },
+        {
+          "playerId": "mandzukic-mario-1986",
+          "fullName": "Mario Mandžukić",
+          "commonName": "Mandžukić",
+          "birthDate": "1986-05-21",
+          "birthPlace": "Slavonski Brod",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 190,
+          "weight": 88,
+          "shirtNumber": 17,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Juventus",
+            "country": "Italy",
+            "iso3": "ITA",
+            "league": "Serie A"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 32,
+          "internationalCaps": 89,
+          "internationalGoals": 33
+        },
+        {
+          "playerId": "perisic-ivan-1989",
+          "fullName": "Ivan Perišić",
+          "commonName": "Perišić",
+          "birthDate": "1989-02-02",
+          "birthPlace": "Split",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 187,
+          "weight": 80,
+          "shirtNumber": 4,
+          "position": "MF",
+          "foot": "left",
+          "club": {
+            "name": "Inter Milan",
+            "country": "Italy",
+            "iso3": "ITA",
+            "league": "Serie A"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 29,
+          "internationalCaps": 95,
+          "internationalGoals": 30
+        },
+        {
+          "playerId": "rakitic-ivan-1988",
+          "fullName": "Ivan Rakitić",
+          "commonName": "Rakitić",
+          "birthDate": "1988-03-10",
+          "birthPlace": "Mohlin",
+          "birthCountryIso3": "CHE",
+          "iso3": "CRO",
+          "height": 184,
+          "weight": 78,
+          "shirtNumber": 7,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Barcelona",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 30,
+          "internationalCaps": 110,
+          "internationalGoals": 15
+        }
+      ]
+    },
+    {
+      "iso3": "BEL",
+      "name": "Belgium",
+      "confederation": "UEFA",
+      "qualificationStage": "UEFA Qualifying",
+      "finalStanding": 3,
+      "finishStage": "ThirdPlace",
+      "groupId": "G",
+      "record": {
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0,
+        "points": 0
+      },
+      "coach": {
+        "name": "Roberto Martínez",
+        "nationality": "Spanish",
+        "iso3": "ESP"
+      },
+      "squad": [
+        {
+          "playerId": "courtois-thibaut-1992",
+          "fullName": "Thibaut Courtois",
+          "commonName": "Courtois",
+          "birthDate": "1992-05-11",
+          "birthPlace": "Bree",
+          "birthCountryIso3": "BEL",
+          "iso3": "BEL",
+          "height": 199,
+          "weight": 96,
+          "shirtNumber": 1,
+          "position": "GK",
+          "foot": "left",
+          "club": {
+            "name": "Real Madrid",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 26,
+          "internationalCaps": 68,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "hazard-eden-1991",
+          "fullName": "Eden Hazard",
+          "commonName": "Hazard",
+          "birthDate": "1991-01-07",
+          "birthPlace": "La Louvière",
+          "birthCountryIso3": "BEL",
+          "iso3": "BEL",
+          "height": 175,
+          "weight": 74,
+          "shirtNumber": 10,
+          "position": "FW",
+          "foot": "left",
+          "club": {
+            "name": "Chelsea",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 27,
+          "internationalCaps": 97,
+          "internationalGoals": 30
+        },
+        {
+          "playerId": "lukaku-romelu-1993",
+          "fullName": "Romelu Lukaku",
+          "commonName": "Lukaku",
+          "birthDate": "1993-05-13",
+          "birthPlace": "Antwerp",
+          "birthCountryIso3": "BEL",
+          "iso3": "BEL",
+          "height": 190,
+          "weight": 94,
+          "shirtNumber": 9,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Manchester United",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 25,
+          "internationalCaps": 82,
+          "internationalGoals": 42
+        },
+        {
+          "playerId": "dembele-mousa-1987",
+          "fullName": "Mousa Dembélé",
+          "commonName": "Dembélé",
+          "birthDate": "1987-07-16",
+          "birthPlace": "Wilrijk",
+          "birthCountryIso3": "BEL",
+          "iso3": "BEL",
+          "height": 185,
+          "weight": 83,
+          "shirtNumber": 8,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Tottenham Hotspur",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 30,
+          "internationalCaps": 78,
+          "internationalGoals": 8
+        },
+        {
+          "playerId": "debruyne-kevin-1991",
+          "fullName": "Kevin De Bruyne",
+          "commonName": "De Bruyne",
+          "birthDate": "1991-06-28",
+          "birthPlace": "Ghent",
+          "birthCountryIso3": "BEL",
+          "iso3": "BEL",
+          "height": 181,
+          "weight": 76,
+          "shirtNumber": 7,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Manchester City",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 27,
+          "internationalCaps": 73,
+          "internationalGoals": 19
+        }
+      ]
+    },
+    {
+      "iso3": "ENG",
+      "name": "England",
+      "confederation": "UEFA",
+      "qualificationStage": "UEFA Qualifying",
+      "finalStanding": 4,
+      "finishStage": "SemiFinal",
+      "groupId": "G",
+      "record": {
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0,
+        "points": 0
+      },
+      "coach": {
+        "name": "Gareth Southgate",
+        "nationality": "English",
+        "iso3": "ENG"
+      },
+      "squad": [
+        {
+          "playerId": "pickford-jordan-1994",
+          "fullName": "Jordan Pickford",
+          "commonName": "Pickford",
+          "birthDate": "1994-03-07",
+          "birthPlace": "Washington",
+          "birthCountryIso3": "ENG",
+          "iso3": "ENG",
+          "height": 185,
+          "weight": 76,
+          "shirtNumber": 1,
+          "position": "GK",
+          "foot": "right",
+          "club": {
+            "name": "Everton",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 24,
+          "internationalCaps": 15,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "kane-harry-1993",
+          "fullName": "Harry Kane",
+          "commonName": "Kane",
+          "birthDate": "1993-07-28",
+          "birthPlace": "Walthamstow",
+          "birthCountryIso3": "ENG",
+          "iso3": "ENG",
+          "height": 188,
+          "weight": 86,
+          "shirtNumber": 9,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Tottenham Hotspur",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 24,
+          "internationalCaps": 38,
+          "internationalGoals": 19
+        },
+        {
+          "playerId": "sterling-raheem-1994",
+          "fullName": "Raheem Sterling",
+          "commonName": "Sterling",
+          "birthDate": "1994-12-08",
+          "birthPlace": "Kingston",
+          "birthCountryIso3": "JAM",
+          "iso3": "ENG",
+          "height": 170,
+          "weight": 69,
+          "shirtNumber": 10,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Manchester City",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 23,
+          "internationalCaps": 48,
+          "internationalGoals": 2
+        },
+        {
+          "playerId": "henderson-jordan-1990",
+          "fullName": "Jordan Henderson",
+          "commonName": "Henderson",
+          "birthDate": "1990-06-17",
+          "birthPlace": "Sunderland",
+          "birthCountryIso3": "ENG",
+          "iso3": "ENG",
+          "height": 182,
+          "weight": 78,
+          "shirtNumber": 8,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Liverpool",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 27,
+          "internationalCaps": 56,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "trippier-kieran-1990",
+          "fullName": "Kieran Trippier",
+          "commonName": "Trippier",
+          "birthDate": "1990-09-19",
+          "birthPlace": "Bury",
+          "birthCountryIso3": "ENG",
+          "iso3": "ENG",
+          "height": 178,
+          "weight": 70,
+          "shirtNumber": 12,
+          "position": "DF",
+          "foot": "right",
+          "club": {
+            "name": "Tottenham Hotspur",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 27,
+          "internationalCaps": 7,
+          "internationalGoals": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "matchId": "m64",
+      "stage": "Final",
+      "groupId": null,
+      "matchDay": null,
+      "matchNumber": 64,
+      "datetime": "2018-07-15T15:00:00Z",
+      "venue": {
+        "stadium": "Luzhniki Stadium",
+        "city": "Moscow",
+        "iso3": "RUS",
+        "capacity": 81000
+      },
+      "home": {
+        "iso3": "FRA",
+        "score": 4,
+        "scoreHalfTime": 2,
+        "scoreExtraTime": null,
+        "formation": "4-2-3-1",
+        "startingXI": null
+      },
+      "away": {
+        "iso3": "CRO",
+        "score": 2,
+        "scoreHalfTime": 1,
+        "scoreExtraTime": null,
+        "formation": "4-3-3",
+        "startingXI": null
+      },
+      "afterExtraTime": false,
+      "penaltyShootout": null,
+      "attendance": 78011,
+      "referee": {
+        "name": "Nestor Pitana",
+        "nationality": "Argentine",
+        "iso3": "ARG",
+        "assistants": [
+          {
+            "name": "Hernan Maidana",
+            "nationality": "Argentine"
+          }
+        ]
+      },
+      "events": [
+        {
+          "eventId": "e64-001",
+          "matchId": "m64",
+          "minute": 18,
+          "stoppageMinute": null,
+          "team": "CRO",
+          "playerId": "mandzukic-mario-1986",
+          "type": "own-goal",
+          "relatedPlayerId": null,
+          "detail": {
+            "bodyPart": "head",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": true,
+            "description": "Own goal from Griezmann free kick"
+          }
+        },
+        {
+          "eventId": "e64-002",
+          "matchId": "m64",
+          "minute": 28,
+          "stoppageMinute": null,
+          "team": "CRO",
+          "playerId": "perisic-ivan-1989",
+          "type": "goal",
+          "relatedPlayerId": "modric-luka-1985",
+          "detail": {
+            "bodyPart": "left-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Equaliser"
+          }
+        },
+        {
+          "eventId": "e64-003",
+          "matchId": "m64",
+          "minute": 28,
+          "stoppageMinute": null,
+          "team": "CRO",
+          "playerId": "modric-luka-1985",
+          "type": "assist",
+          "relatedPlayerId": "perisic-ivan-1989",
+          "detail": null
+        },
+        {
+          "eventId": "e64-004",
+          "matchId": "m64",
+          "minute": 38,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "griezmann-antoine-1991",
+          "type": "penalty-goal",
+          "relatedPlayerId": null,
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Penalty after VAR handball call on Perišić"
+          }
+        },
+        {
+          "eventId": "e64-005",
+          "matchId": "m64",
+          "minute": 59,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "pogba-paul-1993",
+          "type": "goal",
+          "relatedPlayerId": "mbappe-kylian-1998",
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": null
+          }
+        },
+        {
+          "eventId": "e64-006",
+          "matchId": "m64",
+          "minute": 59,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "mbappe-kylian-1998",
+          "type": "assist",
+          "relatedPlayerId": "pogba-paul-1993",
+          "detail": null
+        },
+        {
+          "eventId": "e64-007",
+          "matchId": "m64",
+          "minute": 65,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "mbappe-kylian-1998",
+          "type": "goal",
+          "relatedPlayerId": "griezmann-antoine-1991",
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": null
+          }
+        },
+        {
+          "eventId": "e64-008",
+          "matchId": "m64",
+          "minute": 65,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "griezmann-antoine-1991",
+          "type": "assist",
+          "relatedPlayerId": "mbappe-kylian-1998",
+          "detail": null
+        },
+        {
+          "eventId": "e64-009",
+          "matchId": "m64",
+          "minute": 69,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "lloris-hugo-1986",
+          "type": "own-goal",
+          "relatedPlayerId": null,
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Lloris mistake"
+          }
+        }
+      ]
+    }
+  ],
+  "dataSources": [
+    {
+      "name": "FIFA Official",
+      "url": "https://www.fifa.com/worldcup/2018"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup"
+    }
+  ]
+}

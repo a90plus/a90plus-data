@@ -1,0 +1,944 @@
+{
+  "tournamentId": "wc-2022",
+  "year": 2022,
+  "edition": 22,
+  "isMock": true,
+  "verified": false,
+  "host": {
+    "countries": [
+      "QAT"
+    ],
+    "names": [
+      "Qatar"
+    ]
+  },
+  "dates": {
+    "start": "2022-11-20",
+    "end": "2022-12-18"
+  },
+  "format": {
+    "teamsCount": 32,
+    "groups": 8,
+    "hasGroupStage": true,
+    "hasExtraTime": true,
+    "thirdPlaceMatch": true,
+    "stages": [
+      "GroupStage",
+      "RoundOf16",
+      "QuarterFinal",
+      "SemiFinal",
+      "ThirdPlace",
+      "Final"
+    ]
+  },
+  "winner": "ARG",
+  "runnerUp": "FRA",
+  "third": "CRO",
+  "fourth": "MAR",
+  "awards": [
+    {
+      "award": "GoldenBoot",
+      "playerId": "mbappe-kylian-1998",
+      "value": 8
+    },
+    {
+      "award": "GoldenBall",
+      "playerId": "messi-lionel-1987",
+      "value": null
+    },
+    {
+      "award": "GoldenGlove",
+      "playerId": "martinez-emiliano-1992",
+      "value": null
+    },
+    {
+      "award": "BestYoungPlayer",
+      "playerId": "pedri-1002",
+      "value": null
+    },
+    {
+      "award": "FairPlayAward",
+      "playerId": null,
+      "countryIso3": "ENG",
+      "value": null
+    }
+  ],
+  "countries": [
+    {
+      "iso3": "ARG",
+      "name": "Argentina",
+      "confederation": "CONMEBOL",
+      "qualificationStage": "CONMEBOL Qualifying",
+      "finalStanding": 1,
+      "finishStage": "Winner",
+      "groupId": "C",
+      "record": {
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
+        "goalDifference": 0,
+        "points": 1
+      },
+      "coach": {
+        "name": "Lionel Scaloni",
+        "nationality": "Argentine",
+        "iso3": "ARG"
+      },
+      "squad": [
+        {
+          "playerId": "martinez-emiliano-1992",
+          "fullName": "Emiliano Martínez",
+          "commonName": "Martínez",
+          "birthDate": "1992-09-02",
+          "birthPlace": "Mar del Plata",
+          "birthCountryIso3": "ARG",
+          "iso3": "ARG",
+          "height": 195,
+          "weight": 88,
+          "shirtNumber": 23,
+          "position": "GK",
+          "foot": "right",
+          "club": {
+            "name": "Aston Villa",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 30,
+          "internationalCaps": 30,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "messi-lionel-1987",
+          "fullName": "Lionel Andrés Messi Cuccittini",
+          "commonName": "Messi",
+          "birthDate": "1987-06-24",
+          "birthPlace": "Rosario",
+          "birthCountryIso3": "ARG",
+          "iso3": "ARG",
+          "height": 170,
+          "weight": 72,
+          "shirtNumber": 10,
+          "position": "FW",
+          "foot": "left",
+          "club": {
+            "name": "Paris Saint-Germain",
+            "country": "France",
+            "iso3": "FRA",
+            "league": "Ligue 1"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 35,
+          "internationalCaps": 172,
+          "internationalGoals": 98
+        },
+        {
+          "playerId": "alvarez-julian-2000",
+          "fullName": "Julián Álvarez",
+          "commonName": "Julián Álvarez",
+          "birthDate": "2000-01-31",
+          "birthPlace": "Calchín",
+          "birthCountryIso3": "ARG",
+          "iso3": "ARG",
+          "height": 170,
+          "weight": 67,
+          "shirtNumber": 9,
+          "position": "FW",
+          "foot": "left",
+          "club": {
+            "name": "Manchester City",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 22,
+          "internationalCaps": 18,
+          "internationalGoals": 9
+        },
+        {
+          "playerId": "dimaria-angel-1988",
+          "fullName": "Ángel Fabián Di María",
+          "commonName": "Di María",
+          "birthDate": "1988-02-14",
+          "birthPlace": "Rosario",
+          "birthCountryIso3": "ARG",
+          "iso3": "ARG",
+          "height": 178,
+          "weight": 75,
+          "shirtNumber": 11,
+          "position": "FW",
+          "foot": "left",
+          "club": {
+            "name": "Juventus",
+            "country": "Italy",
+            "iso3": "ITA",
+            "league": "Serie A"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 34,
+          "internationalCaps": 129,
+          "internationalGoals": 28
+        },
+        {
+          "playerId": "depaul-rodrigo-1994",
+          "fullName": "Rodrigo Javier De Paul",
+          "commonName": "De Paul",
+          "birthDate": "1994-05-24",
+          "birthPlace": "Sarandí",
+          "birthCountryIso3": "ARG",
+          "iso3": "ARG",
+          "height": 180,
+          "weight": 75,
+          "shirtNumber": 7,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Atlético Madrid",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 28,
+          "internationalCaps": 56,
+          "internationalGoals": 4
+        }
+      ]
+    },
+    {
+      "iso3": "FRA",
+      "name": "France",
+      "confederation": "UEFA",
+      "qualificationStage": "UEFA Qualifying",
+      "finalStanding": 2,
+      "finishStage": "Final",
+      "groupId": "D",
+      "record": {
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
+        "goalDifference": 0,
+        "points": 1
+      },
+      "coach": {
+        "name": "Didier Deschamps",
+        "nationality": "French",
+        "iso3": "FRA"
+      },
+      "squad": [
+        {
+          "playerId": "lloris-hugo-1986",
+          "fullName": "Hugo Lloris",
+          "commonName": "Lloris",
+          "birthDate": "1986-12-26",
+          "birthPlace": "Nice",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 188,
+          "weight": 78,
+          "shirtNumber": 1,
+          "position": "GK",
+          "foot": "right",
+          "club": {
+            "name": "Tottenham Hotspur",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 35,
+          "internationalCaps": 145,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "mbappe-kylian-1998",
+          "fullName": "Kylian Mbappé Lottin",
+          "commonName": "Mbappé",
+          "birthDate": "1998-12-20",
+          "birthPlace": "Bondy",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 178,
+          "weight": 73,
+          "shirtNumber": 10,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Paris Saint-Germain",
+            "country": "France",
+            "iso3": "FRA",
+            "league": "Ligue 1"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 23,
+          "internationalCaps": 66,
+          "internationalGoals": 34
+        },
+        {
+          "playerId": "giroud-olivier-1986",
+          "fullName": "Olivier Giroud",
+          "commonName": "Giroud",
+          "birthDate": "1986-09-30",
+          "birthPlace": "Chambéry",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 192,
+          "weight": 91,
+          "shirtNumber": 9,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "AC Milan",
+            "country": "Italy",
+            "iso3": "ITA",
+            "league": "Serie A"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 36,
+          "internationalCaps": 117,
+          "internationalGoals": 53
+        },
+        {
+          "playerId": "griezmann-antoine-1991",
+          "fullName": "Antoine Griezmann",
+          "commonName": "Griezmann",
+          "birthDate": "1991-03-21",
+          "birthPlace": "Mâcon",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 176,
+          "weight": 73,
+          "shirtNumber": 7,
+          "position": "FW",
+          "foot": "left",
+          "club": {
+            "name": "Atlético Madrid",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 31,
+          "internationalCaps": 123,
+          "internationalGoals": 42
+        },
+        {
+          "playerId": "tchouameni-aurelien-2000",
+          "fullName": "Aurélien Tchouaméni",
+          "commonName": "Tchouaméni",
+          "birthDate": "2000-01-27",
+          "birthPlace": "Rouen",
+          "birthCountryIso3": "FRA",
+          "iso3": "FRA",
+          "height": 187,
+          "weight": 80,
+          "shirtNumber": 8,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Real Madrid",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 22,
+          "internationalCaps": 21,
+          "internationalGoals": 2
+        }
+      ]
+    },
+    {
+      "iso3": "CRO",
+      "name": "Croatia",
+      "confederation": "UEFA",
+      "qualificationStage": "UEFA Qualifying Play-off",
+      "finalStanding": 3,
+      "finishStage": "ThirdPlace",
+      "groupId": "F",
+      "record": {
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0,
+        "points": 0
+      },
+      "coach": {
+        "name": "Zlatko Dalić",
+        "nationality": "Croatian",
+        "iso3": "CRO"
+      },
+      "squad": [
+        {
+          "playerId": "livakovic-dominik-1995",
+          "fullName": "Dominik Livaković",
+          "commonName": "Livaković",
+          "birthDate": "1995-01-09",
+          "birthPlace": "Zadar",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 188,
+          "weight": 80,
+          "shirtNumber": 1,
+          "position": "GK",
+          "foot": "right",
+          "club": {
+            "name": "Dinamo Zagreb",
+            "country": "Croatia",
+            "iso3": "CRO",
+            "league": "HNL"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 27,
+          "internationalCaps": 30,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "modric-luka-1985",
+          "fullName": "Luka Modrić",
+          "commonName": "Modrić",
+          "birthDate": "1985-09-09",
+          "birthPlace": "Zadar",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 172,
+          "weight": 66,
+          "shirtNumber": 10,
+          "position": "MF",
+          "foot": "right",
+          "club": {
+            "name": "Real Madrid",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 37,
+          "internationalCaps": 162,
+          "internationalGoals": 23
+        },
+        {
+          "playerId": "perisic-ivan-1989",
+          "fullName": "Ivan Perišić",
+          "commonName": "Perišić",
+          "birthDate": "1989-02-02",
+          "birthPlace": "Split",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 187,
+          "weight": 80,
+          "shirtNumber": 4,
+          "position": "MF",
+          "foot": "left",
+          "club": {
+            "name": "Tottenham Hotspur",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 33,
+          "internationalCaps": 120,
+          "internationalGoals": 33
+        },
+        {
+          "playerId": "gvardiol-josko-2002",
+          "fullName": "Joško Gvardiol",
+          "commonName": "Gvardiol",
+          "birthDate": "2002-01-23",
+          "birthPlace": "Zagreb",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 185,
+          "weight": 80,
+          "shirtNumber": 3,
+          "position": "DF",
+          "foot": "left",
+          "club": {
+            "name": "RB Leipzig",
+            "country": "Germany",
+            "iso3": "DEU",
+            "league": "Bundesliga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 20,
+          "internationalCaps": 19,
+          "internationalGoals": 1
+        },
+        {
+          "playerId": "kramaric-andrej-1991",
+          "fullName": "Andrej Kramarić",
+          "commonName": "Kramarić",
+          "birthDate": "1991-06-19",
+          "birthPlace": "Zagreb",
+          "birthCountryIso3": "CRO",
+          "iso3": "CRO",
+          "height": 177,
+          "weight": 74,
+          "shirtNumber": 9,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "TSG Hoffenheim",
+            "country": "Germany",
+            "iso3": "DEU",
+            "league": "Bundesliga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 31,
+          "internationalCaps": 80,
+          "internationalGoals": 31
+        }
+      ]
+    },
+    {
+      "iso3": "MAR",
+      "name": "Morocco",
+      "confederation": "CAF",
+      "qualificationStage": "CAF Qualifying",
+      "finalStanding": 4,
+      "finishStage": "SemiFinal",
+      "groupId": "F",
+      "record": {
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0,
+        "points": 0
+      },
+      "coach": {
+        "name": "Walid Regragui",
+        "nationality": "Moroccan",
+        "iso3": "MAR"
+      },
+      "squad": [
+        {
+          "playerId": "bono-yassine-1991",
+          "fullName": "Yassine Bounou",
+          "commonName": "Bono",
+          "birthDate": "1991-04-05",
+          "birthPlace": "Montreal",
+          "birthCountryIso3": "CAN",
+          "iso3": "MAR",
+          "height": 192,
+          "weight": 86,
+          "shirtNumber": 1,
+          "position": "GK",
+          "foot": "right",
+          "club": {
+            "name": "Sevilla",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 31,
+          "internationalCaps": 45,
+          "internationalGoals": 0
+        },
+        {
+          "playerId": "hakimi-achraf-1998",
+          "fullName": "Achraf Hakimi",
+          "commonName": "Hakimi",
+          "birthDate": "1998-11-04",
+          "birthPlace": "Madrid",
+          "birthCountryIso3": "ESP",
+          "iso3": "MAR",
+          "height": 181,
+          "weight": 73,
+          "shirtNumber": 2,
+          "position": "DF",
+          "foot": "right",
+          "club": {
+            "name": "Paris Saint-Germain",
+            "country": "France",
+            "iso3": "FRA",
+            "league": "Ligue 1"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 24,
+          "internationalCaps": 55,
+          "internationalGoals": 10
+        },
+        {
+          "playerId": "saiss-romain-1990",
+          "fullName": "Romain Saïss",
+          "commonName": "Saïss",
+          "birthDate": "1990-03-26",
+          "birthPlace": "Bourg-de-Péage",
+          "birthCountryIso3": "FRA",
+          "iso3": "MAR",
+          "height": 186,
+          "weight": 81,
+          "shirtNumber": 5,
+          "position": "DF",
+          "foot": "right",
+          "club": {
+            "name": "Besiktas",
+            "country": "Turkey",
+            "iso3": "TUR",
+            "league": "Süper Lig"
+          },
+          "captain": true,
+          "viceCaptain": false,
+          "ageAtTournament": 32,
+          "internationalCaps": 70,
+          "internationalGoals": 4
+        },
+        {
+          "playerId": "ziyech-hakim-1993",
+          "fullName": "Hakim Ziyech",
+          "commonName": "Ziyech",
+          "birthDate": "1993-03-19",
+          "birthPlace": "Dronten",
+          "birthCountryIso3": "NLD",
+          "iso3": "MAR",
+          "height": 181,
+          "weight": 68,
+          "shirtNumber": 7,
+          "position": "MF",
+          "foot": "left",
+          "club": {
+            "name": "Chelsea",
+            "country": "England",
+            "iso3": "ENG",
+            "league": "Premier League"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 29,
+          "internationalCaps": 50,
+          "internationalGoals": 17
+        },
+        {
+          "playerId": "ennessyri-youssef-1997",
+          "fullName": "Youssef En-Nesyri",
+          "commonName": "En-Nesyri",
+          "birthDate": "1997-06-01",
+          "birthPlace": "Fès",
+          "birthCountryIso3": "MAR",
+          "iso3": "MAR",
+          "height": 187,
+          "weight": 78,
+          "shirtNumber": 19,
+          "position": "FW",
+          "foot": "right",
+          "club": {
+            "name": "Sevilla",
+            "country": "Spain",
+            "iso3": "ESP",
+            "league": "La Liga"
+          },
+          "captain": false,
+          "viceCaptain": false,
+          "ageAtTournament": 25,
+          "internationalCaps": 38,
+          "internationalGoals": 13
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "matchId": "m64",
+      "stage": "Final",
+      "groupId": null,
+      "matchDay": null,
+      "matchNumber": 64,
+      "datetime": "2022-12-18T15:00:00Z",
+      "venue": {
+        "stadium": "Lusail Stadium",
+        "city": "Lusail",
+        "iso3": "QAT",
+        "capacity": 89000
+      },
+      "home": {
+        "iso3": "ARG",
+        "score": 3,
+        "scoreHalfTime": 2,
+        "scoreExtraTime": 3,
+        "formation": "4-4-2",
+        "startingXI": null
+      },
+      "away": {
+        "iso3": "FRA",
+        "score": 3,
+        "scoreHalfTime": 0,
+        "scoreExtraTime": 3,
+        "formation": "4-2-3-1",
+        "startingXI": null
+      },
+      "afterExtraTime": true,
+      "penaltyShootout": {
+        "homeScore": 4,
+        "awayScore": 2,
+        "order": [
+          {
+            "team": "ARG",
+            "playerId": "messi-lionel-1987",
+            "scored": true,
+            "minute": 121
+          },
+          {
+            "team": "FRA",
+            "playerId": "mbappe-kylian-1998",
+            "scored": true,
+            "minute": 121
+          },
+          {
+            "team": "ARG",
+            "playerId": "depaul-rodrigo-1994",
+            "scored": true,
+            "minute": 122
+          },
+          {
+            "team": "FRA",
+            "playerId": "griezmann-antoine-1991",
+            "scored": false,
+            "minute": 122
+          },
+          {
+            "team": "ARG",
+            "playerId": "dimaria-angel-1988",
+            "scored": true,
+            "minute": 123
+          },
+          {
+            "team": "FRA",
+            "playerId": "tchouameni-aurelien-2000",
+            "scored": false,
+            "minute": 123
+          },
+          {
+            "team": "ARG",
+            "playerId": "alvarez-julian-2000",
+            "scored": true,
+            "minute": 124
+          }
+        ]
+      },
+      "attendance": 88966,
+      "referee": {
+        "name": "Szymon Marciniak",
+        "nationality": "Polish",
+        "iso3": "POL",
+        "assistants": [
+          {
+            "name": "Paweł Sokolnicki",
+            "nationality": "Polish"
+          },
+          {
+            "name": "Tomasz Listkiewicz",
+            "nationality": "Polish"
+          }
+        ]
+      },
+      "events": [
+        {
+          "eventId": "e64-001",
+          "matchId": "m64",
+          "minute": 23,
+          "stoppageMinute": null,
+          "team": "ARG",
+          "playerId": "messi-lionel-1987",
+          "type": "penalty-goal",
+          "relatedPlayerId": null,
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Penalty after Di María fouled"
+          }
+        },
+        {
+          "eventId": "e64-002",
+          "matchId": "m64",
+          "minute": 36,
+          "stoppageMinute": null,
+          "team": "ARG",
+          "playerId": "dimaria-angel-1988",
+          "type": "goal",
+          "relatedPlayerId": "alvarez-julian-2000",
+          "detail": {
+            "bodyPart": "left-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": null
+          }
+        },
+        {
+          "eventId": "e64-003",
+          "matchId": "m64",
+          "minute": 36,
+          "stoppageMinute": null,
+          "team": "ARG",
+          "playerId": "alvarez-julian-2000",
+          "type": "assist",
+          "relatedPlayerId": "dimaria-angel-1988",
+          "detail": null
+        },
+        {
+          "eventId": "e64-004",
+          "matchId": "m64",
+          "minute": 80,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "mbappe-kylian-1998",
+          "type": "penalty-goal",
+          "relatedPlayerId": null,
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Penalty after handball"
+          }
+        },
+        {
+          "eventId": "e64-005",
+          "matchId": "m64",
+          "minute": 81,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "mbappe-kylian-1998",
+          "type": "goal",
+          "relatedPlayerId": "griezmann-antoine-1991",
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Volley"
+          }
+        },
+        {
+          "eventId": "e64-006",
+          "matchId": "m64",
+          "minute": 81,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "griezmann-antoine-1991",
+          "type": "assist",
+          "relatedPlayerId": "mbappe-kylian-1998",
+          "detail": null
+        },
+        {
+          "eventId": "e64-007",
+          "matchId": "m64",
+          "minute": 118,
+          "stoppageMinute": null,
+          "team": "ARG",
+          "playerId": "messi-lionel-1987",
+          "type": "goal",
+          "relatedPlayerId": null,
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Poked in from close range"
+          }
+        },
+        {
+          "eventId": "e64-008",
+          "matchId": "m64",
+          "minute": 118,
+          "stoppageMinute": null,
+          "team": "FRA",
+          "playerId": "mbappe-kylian-1998",
+          "type": "penalty-goal",
+          "relatedPlayerId": null,
+          "detail": {
+            "bodyPart": "right-foot",
+            "shootout": false,
+            "varOverturned": false,
+            "fromCorner": false,
+            "fromFreeKick": false,
+            "description": "Penalty in extra time — hat-trick"
+          }
+        },
+        {
+          "eventId": "e64-009",
+          "matchId": "m64",
+          "minute": 65,
+          "stoppageMinute": null,
+          "team": "ARG",
+          "playerId": "depaul-rodrigo-1994",
+          "type": "yellow-card",
+          "relatedPlayerId": null,
+          "detail": null
+        },
+        {
+          "eventId": "e64-010",
+          "matchId": "m64",
+          "minute": 71,
+          "stoppageMinute": null,
+          "team": "ARG",
+          "playerId": "dimaria-angel-1988",
+          "type": "substitution-off",
+          "relatedPlayerId": "alvarez-julian-2000",
+          "detail": null
+        },
+        {
+          "eventId": "e64-011",
+          "matchId": "m64",
+          "minute": 71,
+          "stoppageMinute": null,
+          "team": "ARG",
+          "playerId": "alvarez-julian-2000",
+          "type": "substitution-on",
+          "relatedPlayerId": "dimaria-angel-1988",
+          "detail": null
+        }
+      ]
+    }
+  ],
+  "dataSources": [
+    {
+      "name": "FIFA Official",
+      "url": "https://www.fifa.com/worldcup/2022"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup"
+    }
+  ]
+}

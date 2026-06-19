@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://a90plus.github.io/schema/event.schema.json",
+  "title": "Event",
+  "description": "A granular in-match event. Goals, assists, cards, substitutions, and VAR decisions are all events with a type. Player stats (goals, cards) are NEVER stored separately — always derived by counting events.",
+  "type": "object",
+  "required": ["eventId", "matchId", "minute", "team", "playerId", "type"],
+  "additionalProperties": false,
+  "properties": {
+    "eventId": { "type": "string", "pattern": "^e[0-9]+-[a-z0-9]+$" },
+    "matchId": { "type": "string", "pattern": "^m[0-9]+$" },
+    "minute": { "type": "integer", "minimum": 1, "maximum": 130 },
+    "stoppageMinute": { "type": ["integer", "null"], "minimum": 1, "description": "Stoppage-time addition, e.g. minute=90 stoppageMinute=3 → '90+3'." },
+    "team": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "playerId": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "goal",
+        "own-goal",
+        "penalty-goal",
+        "penalty-missed",
+        "assist",
+        "yellow-card",
+        "second-yellow",
+        "red-card",
+        "substitution-on",
+        "substitution-off",
+        "penalty-conceded",
+        "penalty-won",
+        "var-review"
+      ]
+    },
+    "relatedPlayerId": {
+      "type": ["string", "null"],
+      "description": "For substitution-on: the player coming off. For assist: the goalscorer. For second-yellow/red: null."
+    },
+    "detail": {
+      "type": ["object", "null"],
+      "properties": {
+        "bodyPart": { "type": ["string", "null"], "enum": ["right-foot", "left-foot", "head", "other", null] },
+        "shootout": { "type": ["boolean", "null"] },
+        "varOverturned": { "type": ["boolean", "null"] },
+        "fromCorner": { "type": ["boolean", "null"] },
+        "fromFreeKick": { "type": ["boolean", "null"] },
+        "description": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

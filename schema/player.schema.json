@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://a90plus.github.io/schema/player.schema.json",
+  "title": "Player",
+  "description": "A squad member in a single World Cup. No career stats stored here — derive them by aggregating events across tournament files.",
+  "type": "object",
+  "required": [
+    "playerId", "fullName", "commonName", "birthDate",
+    "iso3", "shirtNumber", "position", "club", "captain"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "playerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+-[a-z0-9]+-[0-9]{4}$",
+      "description": "Globally stable slug: lastname-firstname-birthyear. The only cross-file linkage — an identifier, not a stat."
+    },
+    "fullName": { "type": "string", "description": "Legal full name." },
+    "commonName": { "type": "string", "description": "Name as printed on shirt or commonly used in media." },
+    "birthDate": { "type": "string", "format": "date" },
+    "birthPlace": { "type": ["string", "null"] },
+    "birthCountryIso3": { "type": ["string", "null"] },
+    "iso3": { "type": "string", "pattern": "^[A-Z]{3}$", "description": "Nationality represented in this tournament." },
+    "height": { "type": ["integer", "null"], "description": "Height in cm." },
+    "weight": { "type": ["integer", "null"], "description": "Weight in kg." },
+    "shirtNumber": { "type": "integer", "minimum": 1, "maximum": 99 },
+    "position": {
+      "type": "string",
+      "enum": ["GK", "DF", "MF", "FW"]
+    },
+    "foot": { "type": ["string", "null"], "enum": ["right", "left", "both", null] },
+    "club": {
+      "type": "object",
+      "required": ["name", "country"],
+      "properties": {
+        "name": { "type": "string" },
+        "country": { "type": "string" },
+        "iso3": { "type": ["string", "null"] },
+        "league": { "type": ["string", "null"] }
+      }
+    },
+    "captain": { "type": "boolean" },
+    "viceCaptain": { "type": "boolean" },
+    "ageAtTournament": { "type": ["integer", "null"], "description": "Age in years on tournament start date." },
+    "internationalCaps": { "type": ["integer", "null"], "description": "Caps prior to this tournament — informational only, not derived here." },
+    "internationalGoals": { "type": ["integer", "null"], "description": "International goals prior to this tournament — informational only." }
+  }
+}

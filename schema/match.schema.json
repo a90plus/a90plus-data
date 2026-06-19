@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://a90plus.github.io/schema/match.schema.json",
+  "title": "Match",
+  "description": "A single match within a World Cup tournament.",
+  "type": "object",
+  "required": [
+    "matchId", "stage", "datetime", "venue",
+    "home", "away", "afterExtraTime", "penaltyShootout",
+    "attendance", "referee", "events"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "matchId": { "type": "string", "pattern": "^m[0-9]+$" },
+    "stage": {
+      "type": "string",
+      "enum": ["GroupStage", "RoundOf16", "QuarterFinal", "SemiFinal", "ThirdPlace", "Final"]
+    },
+    "groupId": { "type": ["string", "null"] },
+    "matchDay": { "type": ["integer", "null"], "description": "Match day within the group stage (1, 2, or 3)." },
+    "matchNumber": { "type": ["integer", "null"], "description": "Sequential match number in the tournament." },
+    "datetime": { "type": "string", "format": "date-time" },
+    "venue": {
+      "type": "object",
+      "required": ["stadium", "city", "iso3"],
+      "properties": {
+        "stadium": { "type": "string" },
+        "city": { "type": "string" },
+        "iso3": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "capacity": { "type": ["integer", "null"] }
+      }
+    },
+    "home": { "$ref": "#/definitions/teamResult" },
+    "away": { "$ref": "#/definitions/teamResult" },
+    "afterExtraTime": { "type": "boolean" },
+    "penaltyShootout": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["homeScore", "awayScore", "order"],
+          "properties": {
+            "homeScore": { "type": "integer" },
+            "awayScore": { "type": "integer" },
+            "order": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["team", "playerId", "scored", "minute"],
+                "properties": {
+                  "team": { "type": "string" },
+                  "playerId": { "type": "string" },
+                  "scored": { "type": "boolean" },
+                  "minute": { "type": "integer" }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "attendance": { "type": ["integer", "null"] },
+    "referee": {
+      "type": "object",
+      "required": ["name", "nationality"],
+      "properties": {
+        "name": { "type": "string" },
+        "nationality": { "type": "string" },
+        "iso3": { "type": ["string", "null"] },
+        "assistants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "nationality": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": { "$ref": "event.schema.json" }
+    }
+  },
+  "definitions": {
+    "teamResult": {
+      "type": "object",
+      "required": ["iso3", "score"],
+      "properties": {
+        "iso3": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "score": { "type": "integer", "minimum": 0 },
+        "scoreHalfTime": { "type": ["integer", "null"] },
+        "scoreExtraTime": { "type": ["integer", "null"] },
+        "formation": { "type": ["string", "null"], "description": "Starting formation e.g. '4-3-3'." },
+        "startingXI": {
+          "type": ["array", "null"],
+          "items": { "type": "string" },
+          "minItems": 11,
+          "maxItems": 11
+        }
+      }
+    }
+  }
+}

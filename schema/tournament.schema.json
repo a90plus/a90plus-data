@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://a90plus.github.io/schema/tournament.schema.json",
+  "title": "Tournament",
+  "description": "Top-level file for a single FIFA World Cup edition. All stats are scoped to this tournament only.",
+  "type": "object",
+  "required": [
+    "tournamentId", "year", "edition", "host", "dates", "format",
+    "winner", "runnerUp", "third", "fourth",
+    "awards", "countries", "matches", "dataSources", "isMock", "verified"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "tournamentId": { "type": "string", "pattern": "^wc-[0-9]{4}$", "examples": ["wc-2022"] },
+    "year": { "type": "integer", "minimum": 1930 },
+    "edition": { "type": "integer", "minimum": 1 },
+    "isMock": { "type": "boolean", "description": "True when data has not been fully verified from authoritative sources." },
+    "verified": { "type": "boolean", "description": "False means data may contain inaccuracies." },
+    "host": {
+      "type": "object",
+      "required": ["countries", "names"],
+      "properties": {
+        "countries": { "type": "array", "items": { "type": "string", "pattern": "^[A-Z]{3}$" }, "minItems": 1 },
+        "names": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+    "dates": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date" }
+      }
+    },
+    "format": {
+      "type": "object",
+      "required": ["teamsCount", "groups", "hasGroupStage", "hasExtraTime", "thirdPlaceMatch", "stages"],
+      "properties": {
+        "teamsCount": { "type": "integer" },
+        "groups": { "type": "integer" },
+        "hasGroupStage": { "type": "boolean" },
+        "hasExtraTime": { "type": "boolean" },
+        "thirdPlaceMatch": { "type": "boolean" },
+        "stages": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "winner": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "runnerUp": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "third": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "fourth": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "awards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["award", "playerId"],
+        "properties": {
+          "award": { "type": "string" },
+          "playerId": { "type": ["string", "null"] },
+          "countryIso3": { "type": ["string", "null"] },
+          "value": {}
+        }
+      }
+    },
+    "countries": {
+      "type": "array",
+      "items": { "$ref": "country.schema.json" }
+    },
+    "matches": {
+      "type": "array",
+      "items": { "$ref": "match.schema.json" }
+    },
+    "dataSources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url"],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    }
+  }
+}

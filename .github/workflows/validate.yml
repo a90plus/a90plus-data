@@ -1,0 +1,30 @@
+name: Validate Tournament Data
+
+on:
+  push:
+    paths:
+      - 'tournaments/**'
+      - 'schema/**'
+      - 'tools/validate.py'
+  pull_request:
+    paths:
+      - 'tournaments/**'
+      - 'schema/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install jsonschema pytest
+      - name: Validate all tournament files
+        run: |
+          for f in tournaments/*.json; do
+            echo "--- $f ---"
+            python tools/validate.py "$f"
+          done
+      - name: Run tests
+        run: pytest tests/ -v
