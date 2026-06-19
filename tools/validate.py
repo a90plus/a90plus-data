@@ -132,8 +132,9 @@ def validate_integrity(data, errors):
             eteam = event.get("team")
             etype = event.get("type")
 
-            # Check player ref
-            if pid and pid not in all_player_ids:
+            # Check player ref (unknown-player-* are valid placeholders for
+            # events where the scorer could not be identified from the source)
+            if pid and pid not in all_player_ids and not pid.startswith("unknown-player-"):
                 errors.setdefault("REFERENTIAL", []).append(
                     f"{mid}/{eid}: playerId '{pid}' not in any squad"
                 )

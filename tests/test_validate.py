@@ -112,16 +112,17 @@ class TestForbiddenFields:
 class TestReferentialIntegrity:
     def test_unknown_player_in_event_flagged(self):
         pid = "known-player-1990"
-        unknown_pid = "unknown-player-1990"
+        # Use a non-exempt bad ID (unknown-player-* are exempt as scraper placeholders)
+        bad_pid = "notinany-squad-1990"
         country = _country("BRA", squad=[_player(pid, "BRA", 9)])
         match = _match("m1", "BRA", "ARG", 1, 0, events=[
-            _event("e1-goal", "m1", 30, "BRA", unknown_pid, "goal")
+            _event("e1-goal", "m1", 30, "BRA", bad_pid, "goal")
         ])
         data = {"countries": [country, _country("ARG")], "matches": [match]}
         errors = {}
         v.validate_integrity(data, errors)
         assert "REFERENTIAL" in errors
-        assert any(unknown_pid in e for e in errors["REFERENTIAL"])
+        assert any(bad_pid in e for e in errors["REFERENTIAL"])
 
     def test_known_player_in_event_passes(self):
         pid = "known-player-1990"
