@@ -23,6 +23,7 @@ jobs:
       - name: Validate all tournament files
         run: |
           for f in tournaments/*.json; do
+            [ "$(basename $f)" = "index.json" ] && continue
             echo "--- $f ---"
             python tools/validate.py "$f"
           done
