@@ -80,9 +80,26 @@ FIFA_HOME_NATIONS: dict[str, tuple[str, str]] = {
     "Northern Ireland": ("NIR", "UEFA"),
 }
 
-# Known FIFA→ISO mismatches for the website's map renderer (not stored in JSON)
-FIFA_TO_RENDER_ISO: dict[str, str] = {
-    "ENG": "GBR", "SCO": "GBR", "WAL": "GBR", "NIR": "GBR",
+# FIFA codes that differ from ISO alpha-3 for CURRENT (non-extinct) nations.
+# The scraper normalises these so that stored iso3 values are always ISO alpha-3.
+# ENG/SCO/WAL/NIR stay as-is (FIFA home nations with no ISO alpha-3 of their own).
+FIFA_TO_ISO: dict[str, str] = {
+    "CRC": "CRI",  # Costa Rica
+    "CRO": "HRV",  # Croatia
+    "DEN": "DNK",  # Denmark
+    "GER": "DEU",  # Germany
+    "HOL": "NLD",  # Netherlands (historical FIFA code)
+    "NED": "NLD",  # Netherlands (modern FIFA code)
+    "KSA": "SAU",  # Saudi Arabia
+    "POR": "PRT",  # Portugal
+    "SUI": "CHE",  # Switzerland
+    "URU": "URY",  # Uruguay
+    "IVO": "CIV",  # Ivory Coast
+    "TRI": "TTO",  # Trinidad and Tobago
+    "ALG": "DZA",  # Algeria
+    "BUL": "BGR",  # Bulgaria
+    "GRE": "GRC",  # Greece
+    "ZIM": "ZWE",  # Zimbabwe
 }
 
 
@@ -291,19 +308,28 @@ class CountryResolver:
         )
 
     def resolve(self, raw_name: str) -> tuple[str, str]:
-        """Return (fifa_code, confederation) for a country name. Returns ('UNK','UEFA') on failure."""
+        """Return (iso3_code, confederation). Normalises FIFA codes to ISO alpha-3. Returns ('UNK','UEFA') on failure."""
         name = _clean(raw_name)
+
+        def _normalise(code: str, conf: str) -> tuple[str, str]:
+            """Convert FIFA code to ISO alpha-3 if a mapping exists."""
+            iso = FIFA_TO_ISO.get(code, code)
+            if iso != code:
+                # Keep confederation consistent
+                conf = self._code_to_conf.get(iso, conf)
+                self._code_to_conf[iso] = conf
+            return (iso, conf)
 
         # 1. Direct lookup (case-insensitive)
         hit = self._name_map.get(name.lower())
         if hit:
-            return hit
+            return _normalise(*hit)
 
         # 2. Strip parenthetical (e.g. "Korea Republic (South Korea)")
         base = re.sub(r"\s*\(.*?\)", "", name).strip()
         hit = self._name_map.get(base.lower())
         if hit:
-            return hit
+            return _normalise(*hit)
 
         # 3. pycountry fuzzy search
         if HAS_PYCOUNTRY:
@@ -1007,7 +1033,7 @@ TOURNAMENT_FACTS: dict[int, dict] = {
             {"award": "GoldenBoot",      "playerId": "mbappe-kylian-1998",    "value": 8},
             {"award": "GoldenBall",      "playerId": "messi-lionel-1987",     "value": None},
             {"award": "GoldenGlove",     "playerId": "martinez-emiliano-1992","value": None},
-            {"award": "BestYoungPlayer", "playerId": "pedri-1002",            "value": None},
+            {"award": "BestYoungPlayer", "playerId": "unknown-pedri-2002",     "value": None},
             {"award": "FairPlayAward",   "playerId": None, "countryIso3": "ENG", "value": None},
         ],
     },
